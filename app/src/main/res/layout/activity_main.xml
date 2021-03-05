@@ -1,18 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/principal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnCargar"
+        android:layout_width="123dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginRight="139dp"
+        android:layout_marginBottom="242dp"
+        android:layout_x="219dp"
+        android:layout_y="289dp"
+        android:onClick="SeleccionarImagen"
+        android:text="Cargar" />
+    <ImageView
+        android:id="@+id/idImagen"
+        android:layout_width="390dp"
+        android:layout_height="288dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_x="6dp"
+        android:layout_y="1dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/idDatos"
+        android:layout_width="385dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="461dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="3dp"
+        android:layout_x="11dp"
+        android:layout_y="466dp"
+        android:scrollbars="vertical"
+        android:textSize="14sp"
+        android:verticalScrollbarPosition="right"
+        />
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="204dp"
+        android:layout_x="221dp"
+        android:layout_y="376dp"
+        android:onClick="validar"
+        android:text="Mostrar" />
+
+    <ListView
+        android:id="@+id/IdObjectDetection"
+        android:layout_width="208dp"
+        android:layout_height="164dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginRight="173dp"
+        android:layout_marginBottom="152dp"
+        android:layout_x="9dp"
+        android:layout_y="289dp"
+        android:choiceMode="singleChoice">
+
+    </ListView>
+
+</AbsoluteLayout>
